@@ -1,0 +1,28 @@
+@use "../partials/button";
+@use "../variables/colors";
+@use "../variables/fonts";
+
+@mixin card($button-color, $background-color) {
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 3% 4% 5%;
+    @media (min-width: 990px) {
+        height: 426px;
+    }
+
+    h2 {
+        font-size: calc(1.325rem + 0.9vw);
+        font-family: fonts.$Shoulders;
+        padding: 5% 0;
+    }
+    p {
+        font-size: 15px;
+        padding-bottom: 25%;
+    }
+
+    font-family: fonts.$Lexend;
+    background-color: $background-color;
+
+    @include button.button($button-color);
+}
