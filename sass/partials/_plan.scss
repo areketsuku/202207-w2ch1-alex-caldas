@@ -1,0 +1,22 @@
+@use "../variables/colors";
+
+@mixin plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
+    div {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+    }
+    div {
+        display: flex;
+        width: fit-content;
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
